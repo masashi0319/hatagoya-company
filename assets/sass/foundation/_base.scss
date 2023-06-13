@@ -1,0 +1,13 @@
+@use "../global" as g;
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.br768on {
+  display: none;
+  @include g.mq(sp) {
+    display: block;
+  }
+}

@@ -1,0 +1,40 @@
+// フォントサイズ周り
+@mixin fz($size, $height: false, $weight: false) {
+    font-size: #{$size}px;
+  
+    @if $weight {
+        font-weight: $weight;
+    }
+  
+    @if $height {
+        line-height: calc($height / $size);
+    }
+  }
+  
+@mixin ls($num) {
+$ls: calc($num / 1000);
+letter-spacing: #{$ls}em;
+}
+
+// レスポンシブ関係
+$breakpoint: (
+    xsp: 'screen and (max-width: 600px)',
+    sp: 'screen and (max-width: 769px)',
+    xtab: 'screen and (max-width: 850px)',
+    tab: 'screen and (max-width: 990px)',
+    pc: 'screen and (min-width: 991px)'
+);
+@mixin mq($bp) {
+@media #{map-get($breakpoint, $bp)} {
+    @content;
+}
+}
+
+//フォント
+@mixin nsr() {
+    font-family: NotoSansJP-Regular;
+}
+
+@mixin nsb() {
+    font-family: NotoSansJP-Bold;
+}
