@@ -1,0 +1,24 @@
+@use "../../global" as g;
+
+.headingBox {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  gap: 20px;
+
+  &__line {
+    display: block;
+    height: 1px;
+    background-color: g.$yellow;
+  }
+
+  &__text {
+    @include g.fz(24, 32, 700);
+    @include g.ls(120);
+    @include g.mq(sp) {
+      font-size: 22px;
+      line-height: 1.6;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "../../global" as g;
+
+.text {
+  @include g.fz(16, 32);
+  @include g.ls(100);
+  color: #000;
+  margin-top: 31px;
+  @include g.mq(sp) {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  &--mTopNone {
+    margin-top: 0;
+  }
+
+  &--positionRight {
+    text-align: right;
+  }
+}

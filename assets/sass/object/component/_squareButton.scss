@@ -1,0 +1,35 @@
+@use "../../global" as g;
+
+.squareButton {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__link {
+    display: block;
+    background-color: g.$orange;
+    border: 3px solid g.$orange;
+    color: #000;
+    text-align: center;
+    transition: background-color .25s ease, color .25s ease;
+
+    @include g.hover {
+      &:hover {
+        background-color: #fff;
+        color: g.$orange;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+    @include g.fz(32, 35, 700);
+    @include g.ls(25);
+    padding: 29.5px 0;
+    @include g.mq(sp) {
+      font-size: 24px;
+      padding: 28px 0;
+    }
+  }
+}

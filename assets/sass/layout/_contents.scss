@@ -1,0 +1,29 @@
+@use "../global" as g;
+
+.container {
+  margin-top: 56px;
+  @include g.mq(sp) {
+    margin-top: 45px;
+  }
+
+  &--mTopNone {
+    margin-top: 0;
+  }
+
+  &--paddingWide {
+    padding-top: 96px;
+    padding-bottom: 100px;
+  }
+}
+
+.contents {
+  max-width: 740px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &--wide {
+    @extend .contents;
+    max-width: 1140px;
+  }
+}

@@ -1,5 +1,9 @@
 @use "../global" as g;
 
+body {
+  font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -9,5 +13,19 @@ img {
   display: none;
   @include g.mq(sp) {
     display: block;
+  }
+}
+
+.br768off {
+  display: block;
+  @include g.mq(sp) {
+    display: none;
+  }
+}
+
+.br1100off {
+  display: block;
+  @media screen and (max-width: 1100px) {
+    display: none;
   }
 }
