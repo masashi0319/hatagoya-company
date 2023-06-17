@@ -43,9 +43,13 @@ function scrollObserver(elements, timimg) {
 // DOM取得
 const targetsPc = document.querySelectorAll('.js_scrollPc');
 const targetsSp = document.querySelectorAll('.js_scrollSp');
+const timelineItem = document.querySelectorAll('.js_scroll');
+console.log(timelineItem);
 
 if( window.innerWidth >= 769) {
   scrollObserver(targetsPc, -400); 
 } else {
   scrollObserver(targetsSp, -200);
 }
+
+scrollObserver(timelineItem, -150);

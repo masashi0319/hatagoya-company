@@ -14,6 +14,15 @@
     padding-top: 96px;
     padding-bottom: 100px;
   }
+
+  &--paddingWideSecondary {
+    padding-top: 90px;
+    padding-bottom: 155px;
+    @include g.mq(sp) {
+      padding-top: 45px;
+      padding-bottom: 110px;
+    }
+  }
 }
 
 .contents {
@@ -22,7 +31,12 @@
   margin: 0 auto;
   padding: 0 20px;
 
-  &--wide {
+  &--medium {
+    @extend .contents;
+    max-width: 940px
+  }
+
+  &--large {
     @extend .contents;
     max-width: 1140px;
   }

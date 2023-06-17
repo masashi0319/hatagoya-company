@@ -1,0 +1,13 @@
+@use "../../global" as g;
+
+.history {
+  &__icon {
+    display: block;
+    width: 38.5px;
+    margin: 0 auto;
+    @include g.mq(sp) {
+      width: 24.5px;
+      margin: 0 0 0 22px;
+    }
+  }
+}

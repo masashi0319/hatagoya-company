@@ -1,7 +1,60 @@
 @use "../global" as g;
 
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  60% {
+      opacity: 1;
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+  }
+  100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+}
+
+@keyframes bounce-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);   
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(10px);       
+  }
+
+  100% {
+    transform: translateX(0);       
+  }
+}
+
+@keyframes bounce-right {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);   
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-10px);       
+  }
+
+  100% {
+    transform: translateX(0);       
+  }
+}
+
 body {
   font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
