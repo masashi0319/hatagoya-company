@@ -1,6 +1,6 @@
 'use strict';
 
-if( window.innerWidth >= 769) {
+if( window.innerWidth >= 780) {
   let i = 0;
   const animTargetsA = document.querySelectorAll(".js-animTargetA");
   
@@ -46,7 +46,7 @@ const targetsSp = document.querySelectorAll('.js_scrollSp');
 const timelineItem = document.querySelectorAll('.js_scroll');
 console.log(timelineItem);
 
-if( window.innerWidth >= 769) {
+if( window.innerWidth >= 780) {
   scrollObserver(targetsPc, -400); 
 } else {
   scrollObserver(targetsSp, -200);

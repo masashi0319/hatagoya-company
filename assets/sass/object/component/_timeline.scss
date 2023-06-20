@@ -111,7 +111,7 @@
         .timeline__content {
           opacity: 1;
           transform: translateX(0px);
-          animation: bounce-right .6s;
+          animation: bounce-right 1s;
         }
       }
 
@@ -119,15 +119,15 @@
         .timeline__content {
           opacity: 1;
           transform: translateX(0px);
-          animation: bounce-left .6s;
+          animation: bounce-left 1s;
           @include g.mq(sp) {
-            animation: bounce-right .6s;
+            animation: bounce-right 1s;
           }
         }
       }
 
       .timeline__round {
-        animation: bounce .6s forwards;
+        animation: bounce 1s forwards;
         opacity: 1;
         transform: scale(1);
       }

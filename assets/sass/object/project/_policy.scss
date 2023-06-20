@@ -133,7 +133,7 @@
   &__item {
     opacity: 0;
     transform: translateY(15px);
-    transition: opacity .6s linear, transform .3s ease-out;
+    transition: opacity 1s linear, transform .8s ease-out;
 
     &.fadeIn {
       opacity: 1;

@@ -13,11 +13,15 @@
   &--paddingWide {
     padding-top: 96px;
     padding-bottom: 100px;
+    @include g.mq(sp) {
+      padding-top: 80px;
+    }
   }
 
   &--paddingWideSecondary {
     padding-top: 90px;
     padding-bottom: 155px;
+    overflow: hidden;
     @include g.mq(sp) {
       padding-top: 45px;
       padding-bottom: 110px;
