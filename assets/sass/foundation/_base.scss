@@ -53,6 +53,12 @@ body {
   font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
 }
 
+.main {
+  @include g.mq(sp) {
+    margin-top: 17.949vw;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -60,6 +66,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+p {
+  margin: 0;
 }
 
 .br768on {

@@ -34,78 +34,77 @@
     width: 100%;
     position: absolute;
 
-    &--cloud {
-      max-width: 241px;
-      bottom: 25px;
-      left: 40px;
-      z-index: 1;
-      @media screen and (max-width: 1100px) {
-        max-width: 191px;
-        bottom: 83px;
-      }
-      @include g.mq(sp) {
-        max-width: 172px;
-        bottom: 139px;
-        left: 17px;
-      }
-      @include g.mq(xsp) {
-        max-width: 125px;
-        bottom: unset;
-        top: 24px;
-        left: 21px;
-      }
-    }
-  
-    &--house {
-      max-width: 214px;
-      bottom: 0;
-      left: 201px;
-      z-index: 2;
-      @media screen and (max-width: 1100px) {
-        left: 84px;
-      }
-      @include g.mq(sp) {
-        max-width: 208px;
-        left: 32px;
-      }
-      @include g.mq(xsp) {
-        max-width: 169px;
-        left: -18px;
-      }
-    }
-  
-    &--car {
-      max-width: 88px;
-      bottom: 0;
-      right: 350px;
-      z-index: 2;
-      @media screen and (max-width: 1100px) {
-        right: 205px;
-      }
-      @include g.mq(sp) {
-        max-width: 72px;
-      }
-      @include g.mq(xsp) {
-        max-width: 58.8px;
-        right: 110px;
-      }
-    }
-  
     &--mount {
-      max-width: 436px;
-      bottom: -3px;
-      right: -47px;
-      z-index: 1;
-      @media screen and (max-width: 1100px) {
-        right: -193px;
+      @extend .blockHeading__img;
+      max-width: 433px;
+      left: 0;
+      bottom: -4px;
+      @include g.mq(tab) {
+        max-width: 300px;
       }
       @include g.mq(sp) {
-        max-width: 361px;
-        right: -159px;
+        left: -50px;
       }
       @include g.mq(xsp) {
-        max-width: 292px;
-        right: -157px;
+        max-width: 277px;
+        left: -93px;
+      }
+    }
+
+    &--bird {
+      @extend .blockHeading__img;
+      max-width: 33px;
+      left: 70px;
+      bottom: 109px;
+      @include g.mq(tab) {
+        max-width: 28px;
+        left: 70px;
+        bottom: 92px;
+      }
+      @include g.mq(sp) {
+        max-width: 25px;
+        left: 21px;
+        bottom: 90px;
+      }
+    }
+
+    &--hotel {
+      @extend .blockHeading__img;
+      max-width: 195px;
+      right: 73px;
+      bottom: -5px;
+      @include g.mq(tab) {
+        max-width: 164px;
+        right: 50px;
+      }
+      @include g.mq(sp) {
+        max-width: 171px;
+        right: 10px;
+      }
+      @include g.mq(xsp) {
+        max-width: 136px;
+      }
+    }
+
+    &--cloud {
+      @extend .blockHeading__img;
+      max-width: 353px;
+      top: 33px;
+      right: 0;
+      @include g.mq(tab) {
+        max-width: 264px;
+        top: 65px;
+        right: 0;
+      }
+      @include g.mq(sp){
+        max-width: 262px;
+        top: 100px;
+        right: -69px;
+      }
+      @include g.mq(xsp) {
+       max-width: 253px;
+       top: 113px;
+       right: -186px;
       }
     }
   }
