@@ -1,0 +1,34 @@
+@use "../../global" as g;
+
+.noneStopSwiper {
+  overflow: hidden;
+  
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+
+  &__container {
+    //
+  }
+
+  &__slideBoxTextWrap {
+    padding: 5px 6px;
+  }
+
+  &__slideBoxHeading {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.61;
+    @include g.mq(sp) {
+      font-size: 12px;
+    }
+  }
+
+  &__slideBoxText {
+    font-size: 13px;
+    line-height: 1.61;
+    @include g.mq(sp) {
+      font-size: 12px;
+    }
+  }
+}

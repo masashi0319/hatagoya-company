@@ -31,6 +31,12 @@ $breakpoint: (
 }
 }
 
+@mixin tel() {
+@media screen and (min-width: 781px) {
+    @content;
+}
+}
+
 //フォント
 @mixin nsr() {
     font-family: NotoSansJP-Regular;

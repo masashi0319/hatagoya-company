@@ -11,7 +11,21 @@
   }
 
   &--bgYellow {
+    @extend .linkBox;
     background-color: #f6f3e0;
+  }
+
+  &--paddingSmall {
+    @extend .linkBox;
+    padding: 60px 20px 50px;
+    @include g.mq(sp) {
+      padding: 50px 20px 50px;
+    }
+  }
+
+  &--gapSmall {
+    @extend .linkBox;
+    gap: 7px;
   }
 
   &__text {
@@ -22,6 +36,72 @@
     @include g.mq(sp) {
       font-size: 28px;
       line-height: 1.6;
+    }
+  }
+
+  &__textBox {
+    //
+  }
+
+  &__textSmall {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 0.875;
+    text-align: center;
+    @include g.mq(tab) {
+      line-height: 1.6;
+    }
+    @include g.mq(sp) {
+      font-size: 16px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin-top: 20px;
+    @include g.mq(sp) {
+      gap: 16px;
+    }
+  }
+
+  &__gridDate {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    @include g.mq(sp) {
+      font-size: 14px;
+    }
+  }
+
+  &__gridTel {
+    font-size: 46px;
+    line-height: 1;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    @include g.tel {
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
+    }
+    @include g.mq(sp) {
+      font-size: 32px;
+    }
+  }
+
+  &__textSmallLight {
+    text-align: center;
+    font-size: 13px;
+    line-height: 2.7;
+    margin-top: 25px;
+    @include g.mq(xtab) {
+      line-height: 1.6;
+    }
+    @include g.mq(sp) {
+      font-size: 12px;
     }
   }
 

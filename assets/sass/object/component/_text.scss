@@ -11,6 +11,7 @@
   }
 
   &--mTopNone {
+    @extend .text;
     margin-top: 0;
   }
 

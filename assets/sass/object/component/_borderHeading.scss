@@ -1,0 +1,44 @@
+@use "../../global" as g;
+
+.borderHeading {
+  border-top: 8px solid g.$yellow;
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  @include g.mq(sp) {
+    border-top: 6px solid g.$yellow;
+    padding: 16px 0;
+  }
+
+  &__num {
+    max-width: 80px;
+    width: 100%;
+    @include g.mq(sp) {
+      max-width: 70px;
+    }
+  }
+
+  &__numItem {
+    font-family: "Oswald", sans-serif;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 300;
+    @include g.mq(sp) {
+      font-size: 45px;
+    }
+  }
+
+  &__text {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.33;
+    @include g.mq(sp) {
+      font-size: 18px;
+    }
+
+    &--newLine {
+      font-size: 18px;
+      line-height: 1.55;
+    }
+  }
+}

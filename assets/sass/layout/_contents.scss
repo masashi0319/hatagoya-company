@@ -27,6 +27,20 @@
       padding-bottom: 110px;
     }
   }
+
+  &--pTopNone {
+    padding-top: 0;
+  }
+
+  &--pBottomSmall {
+    padding-bottom: 45px;
+  }
+
+  &--pBottomLarge {
+    @include g.mq(sp) {
+      padding-bottom: 80px;
+    }
+  }
 }
 
 .contents {
