@@ -65,13 +65,13 @@ const noneStopSwiper = new Swiper('.noneStopSwiper__container', {
   },
   breakpoints: {
     769: {
-      slidesPerView: 3.5,
+      slidesPerView: 3,
     },
     990: {
-      slidesPerView: 4.5,
+      slidesPerView: 4,
     },
     1440: {
-      slidesPerView: 5.5,
+      slidesPerView: 5,
     },
   },
 });

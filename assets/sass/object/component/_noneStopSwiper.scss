@@ -11,6 +11,10 @@
     //
   }
 
+  &__slideBox {
+    //
+  }
+
   &__slideBoxTextWrap {
     padding: 5px 6px;
   }
@@ -21,6 +25,8 @@
     line-height: 1.61;
     @include g.mq(sp) {
       font-size: 12px;
+      line-height: 1.5;
+      margin:0.25em;
     }
   }
 
@@ -29,6 +35,7 @@
     line-height: 1.61;
     @include g.mq(sp) {
       font-size: 12px;
+      line-height: 1.5;
     }
   }
 }

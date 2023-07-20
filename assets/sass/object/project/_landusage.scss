@@ -99,8 +99,8 @@
     gap: 64px 60px;
     margin-top: 96px;
     @include g.mq(sp) {
-      gap: 50px 60px;
-      margin-top: 75px;
+      gap: 90px 60px;
+      margin-top: 90px;
     }
   }
 
@@ -206,7 +206,7 @@
   &__flexItemInner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 29px;
+    gap: 30px;
     margin-top: 34px;
     @include g.mq(xsp) {
       gap: 16px;

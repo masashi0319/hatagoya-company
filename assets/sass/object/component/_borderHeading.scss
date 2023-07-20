@@ -1,7 +1,7 @@
 @use "../../global" as g;
 
 .borderHeading {
-  border-top: 8px solid g.$yellow;
+  border-top: 6px solid g.$yellow;
   display: flex;
   align-items: center;
   padding: 18px 0;
@@ -22,7 +22,7 @@
     font-family: "Oswald", sans-serif;
     font-size: 54px;
     line-height: 1;
-    font-weight: 300;
+    font-weight: 500;
     @include g.mq(sp) {
       font-size: 45px;
     }
