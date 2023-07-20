@@ -68,9 +68,9 @@ const noneStopSwiper = new Swiper('.noneStopSwiper__container', {
       slidesPerView: 3,
     },
     990: {
-      slidesPerView: 4,
+      slidesPerView: 4.5,
     },
-    1440: {
+    1441: {
       slidesPerView: 5,
     },
   },

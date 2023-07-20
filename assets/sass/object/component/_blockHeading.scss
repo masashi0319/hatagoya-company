@@ -117,7 +117,7 @@
 
     &--bad {
       @extend .blockHeading__img;
-      max-width: 346px;
+      max-width: 310px;
       bottom: 0;
       left: 0;
       @media screen and (max-width: 1100px) {
@@ -134,7 +134,7 @@
 
     &--good {
       @extend .blockHeading__img;
-      max-width: 346px;
+      max-width: 310px;
       bottom: 0;
       right: 0;
       @media screen and (max-width: 1100px) {
