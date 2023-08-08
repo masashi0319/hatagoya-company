@@ -6,6 +6,7 @@
   align-items: center;
   padding: 18px 0;
   @include g.mq(sp) {
+    align-items: flex-start;
     border-top: 6px solid g.$yellow;
     padding: 16px 0;
   }
@@ -15,6 +16,7 @@
     width: 100%;
     @include g.mq(sp) {
       max-width: 70px;
+      padding-top: 3px;
     }
   }
 

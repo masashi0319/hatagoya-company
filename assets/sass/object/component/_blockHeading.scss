@@ -13,6 +13,7 @@
 
     &--paddingBLarge {
       @extend .blockHeading__inner;
+      padding: 83px 0 51px;
       @include g.mq(sp) {
         padding: 73px 0 101px;
       }
@@ -117,7 +118,7 @@
 
     &--bad {
       @extend .blockHeading__img;
-      max-width: 310px;
+      max-width: 346px;
       bottom: 0;
       left: 0;
       @media screen and (max-width: 1100px) {
@@ -134,7 +135,7 @@
 
     &--good {
       @extend .blockHeading__img;
-      max-width: 310px;
+      max-width: 346px;
       bottom: 0;
       right: 0;
       @media screen and (max-width: 1100px) {
